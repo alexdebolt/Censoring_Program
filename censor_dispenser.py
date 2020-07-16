@@ -5,18 +5,5 @@ email_three = open("email_three.txt", "r").read()
 email_four = open("email_four.txt", "r").read()
 
 
-
-def sensor_text(email, text):
-    split_email = email.split()
-    censored_email_list = []
-    for word in split_email:
-        if text == word:
-            word = "@#$%^&*"
-            censored_email_list.append(word)
-        if text != word:
-            censored_email_list.append(word)
-     
-    censored_email = " ".join(censored_email_list)
-    return censored_email
-
-
+def sensor_simple(email, text_to_censor):
+    pass
